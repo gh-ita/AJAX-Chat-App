@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+#fenetre
+{
+    display: flex;
+    justify-content: center;
+}
+#userForm
+{
+    padding : 3%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap :10px;
+
+}
+input
+{
+    border: none;
+}
