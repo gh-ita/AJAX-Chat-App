@@ -11,8 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Message = $_POST["Message"];
     $insertion->insertChat($connexion,"conversation",$Message,$User);
     $idMessage = $insertion->selectId($connexion,$Message,"conversation");
-    $table->closeConnection();
     $_SESSION["idMessage"] = $idMessage;
+    $table->closeConnection();
 }
 
 ?>
